@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    /*Para zerar a margin e padding padrão */
+    padding: 0;
+    /*Para zerar a margin e padding padrão */
+    font-family: arial;
+    box-sizing: border-box;
+    /* Todos os elementos n passaram do tamanho do padrão da pagina */
+}
+
+body {
+    /*Background e afins*/
+    background-color: #D9A9DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    /*comando "em" é para definir todos os lados iguais*/
+}
+
+#Calculadora {
+    /*Estrutura da calculadora*/
+    width: 400px;
+    padding: .5em;
+    background-color: #e69a9a;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    /*Titulo "Calculadora"*/
+    font-size: 20px;
+    font-weight: 300;
+    color: #9A799C;
+}
+
+#Operação {
+    /*Alinhamento dos 2 de baixo*/
+    text-align: right;
+}
+
+#Anterior {
+    /*Valor ja calculado*/
+    color: #958396;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    /*Para efetuar a quebra de linha e manter tudo dentro da calc*/
+    min-height: 1.6em;
+
+}
+
+#Atual {
+    /*Valor sendo digitado*/
+    min-height: 1.6em;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    /*Para efetuar a quebra de linha e manter tudo dentro da calc*/
+}
+
+#Botão {
+    /*Grade dos botões*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*Fr serve para criar grid com pre-definição de tamanho*/
+    gap: 2.5px;
+    /*Serve para dar espaço entre os botões*/
+
+}
+
+#Botão button {
+    /*Botoes*/
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 6em;
+    font-size: 15px;
+    background-color: #9A799C;
+    cursor: pointer;
+    /*Para o mouse aparecer quando passarmos por cima*/
+}
+
+#Botão button:hover {
+    /*Para dar uma cor quando passamos o mouse por cima*/
+    background-color: #cfc5cf;
+    border-color: #bb46bb;
+
+}
+
+#Botão .Numeros {
+    background-color: #988b99;
+
+}
+
+#Botão #igual {
+    grid-column: span 2;
+    /*Para que o botao ocupe 2 casas no grid*/
+    background-color: #be78be;
+}
+
+#Botão #igual:hover {
+    /*Para dar uma cor quando passamos o mouse por cima*/
+    background-color: #c063c0;
+}
